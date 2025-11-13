@@ -6,19 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
         spotlight.style.setProperty('--y', e.clientY + 'px');
     });
 });
-
-// --- AJAX Form Submission ---
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Previous code for spotlight effect...
+    
 
-    // New code for the contact form
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevents the default form submission (page reload)
-
+            e.preventDefault(); 
             const form = e.target;
             const data = new FormData(form);
             
@@ -26,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             formStatus.innerHTML = 'Sending...';
             formStatus.style.display = 'block';
 
-            // Your Formspree link is now included here
+            
             fetch('https://formspree.io/f/xpwydvlp', {
                 method: 'POST',
                 body: data,
