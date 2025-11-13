@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const form = e.target;
             const data = new FormData(form);
             
-            // Show a "sending" message
+            
             formStatus.innerHTML = 'Sending...';
             formStatus.style.display = 'block';
 
@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }).then(response => {
                 if (response.ok) {
-                    // Success!
+                    
                     formStatus.innerHTML = "Thanks for your message! I'll get back to you soon.";
-                    form.reset(); // Clear the form fields
+                    form.reset(); 
                 } else {
-                    // Handle server errors
+                    
                     response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
                             formStatus.innerHTML = data["errors"].map(error => error["message"]).join(", ");
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
             }).catch(error => {
-                // Handle network errors
+                
                 formStatus.innerHTML = "Oops! There was a network error.";
             });
         });
