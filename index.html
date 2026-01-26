@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Interactive  Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assest/letter_p_for_panther_vintage_logo_design__vector_graphic_symbol_icon_illustration_creative_idea-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="spotlight"></div>
+
+    <header class="header">
+        <nav class="container">
+            <a href="#" class="logo">JR</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section id="hero" class="hero section">
+    <div class="container">
+        <div class="hero-content"> 
+            <h3 class="hero-intro">Hello, my name is</h3>
+            <h1 class="hero-title">Jackson</h1>
+            <h2 class="hero-subtitle">I build interactive things for the web</h2>
+            <p class="hero-description">
+                I'm a passionate frontend developer focused on creating engaging, accessible, and user-centered web experiences.
+            </p>
+            <a href="#projects" class="btn btn-secondary">Explore My Work</a>
+        </div>
+        <div class="hero-image-container">
+            <img src="assest/jack.jpeg" alt="Your Profile Picture"> 
+        </div>
+    </div>
+</section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    Hi there! I'm Jackson Richard.J, an aspiring frontend developer with a keen eye for detail and a passion for creating beautiful, user-friendly websites. I love bringing ideas to life through code and constantly learning new technologies.
+                </p>
+                <p>
+                    I'm currently looking for opportunities to grow my skills and contribute to exciting projects. When I'm not coding, I enjoy playing games.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Core Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 >Programming & Web Basics</h3>
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>JavaScript</p>
+                        <p>Python</p>
+                        <p>Java</p>
+                        <p>C</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3 >Frameworks</h3>
+                        <p>React.js</p>
+                        <p>Vue.js</p>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">Tools</h3>
+                        <p>Git & GitHub</p>
+                        <p>VS Code</p>
+                        <p>Responsive Web Design</p>
+                        <p>node.js</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Study Plan</h3>
+                        <p>A study plan helps you organize subjects, set goals, and track progress effectively.</p>
+                        <div class="project-tags"><span>JavaScript</span><span>html</span><span>CSS</span></div>
+                        <div class="project-links">
+                            <a href="https://jackson-richard.github.io/Study-Plan/">Live Demo</a>
+                            <a href="https://github.com/Jackson-richard/Study-Plan.git">Source Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Weather Application</h3>
+                        <p>View the latest weather updates and plan your day with accurate forecasts.</p>
+                        <div class="project-tags"><span>JavaScript</span><span>html</span></div>
+                        <div class="project-links">
+                            <a href=" https://jackson-richard.github.io/Weather-/">Live Demo</a>
+                            <a href="https://github.com/Jackson-richard/Weather-.git">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section id="contact" class="contact section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+        
+        <form id="contact-form" class="contact-form"  method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <form id="contact-form" class="contact-form">
+    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+</form>
+
+<div id="form-status"></div>
+        </form>
+            </a>
+        </div>
+    </div>
+</section>
+
+        <div class="social-links">
+            <a href="https://github.com/Jackson-richard" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jacksonrichard-j?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="footer">
+        <p>&copy; 2025 . Built with curiosity and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
