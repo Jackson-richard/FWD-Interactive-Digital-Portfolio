@@ -457,3 +457,75 @@ body {
     color: var(--primary-color);
 }
 
+@media (max-width: 768px) {
+    
+    .header nav {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 0 15px !important;
+    }
+
+    
+    .nav-links {
+        display: flex !important;
+        gap: 18px !important;
+        align-items: center !important;
+        margin-left: auto !important;
+        padding-right: 5px !important;
+    }
+
+    
+    .nav-links a {
+        font-size: 0.85rem !important;
+        letter-spacing: 0.5px; 
+    }
+
+    
+    .nav-links li:last-child {
+        margin-left: 5px; 
+    }
+   
+
+    .hero-description, 
+    .about p, 
+    .contact p,
+    .skill-card, 
+    .project-card,
+    .contact-form {
+        width: 92% !important;
+        max-width: 550px !important; 
+        margin: 0 auto 1.5rem auto !important; 
+        box-sizing: border-box;
+    }
+
+    
+    .about p, .hero-description, .contact p {
+        text-align: center !important;
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+
+  
+    .hero .container {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+        padding-top: 10px !important;
+    }
+
+    .hero-image-container {
+        margin: 0 auto 1.5rem auto !important;
+        max-width: 180px !important;
+    }
+
+    .section-title {
+        text-align: center !important;
+        font-size: 2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    
+    .header {
+        position: relative !important;
+    }
+}
